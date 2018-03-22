@@ -13,9 +13,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_sidebar( 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer" style="display:none;">
+<div class="wrapper" id="wrapper-footer">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+	<!-- <div class="<?php echo esc_attr( $container ); ?>"> -->
+	<div class="container">
 
 		<div class="row">
 
@@ -23,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon">
 
-					<div class="site-info">
+					<!-- <div class="site-info">
 
 							<a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( 
 							/* translators:*/
@@ -37,8 +38,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 							(<?php printf( // WPCS: XSS ok.
 							/* translators:*/
 								esc_html__( 'Version: %1$s', 'understrap' ), $the_theme->get( 'Version' ) ); ?>)
-					</div><!-- .site-info -->
-
+					</div> --><!-- .site-info -->
+					<span class="pull-left">&copy; 2018 Harvey Cenit</span>
+					<span class="social-media pull-right">
+						<a href="" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+						<a href="" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+						<a href="" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+					</span>
+					<span class="pull-right">
+						Follow me on&nbsp;&nbsp;&nbsp;&nbsp;
+					</span>
 				</footer><!-- #colophon -->
 
 			</div><!--col end -->

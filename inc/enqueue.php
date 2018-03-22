@@ -33,7 +33,7 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
 
-		wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:200,700|Six+Caps|Italiana', array(), $the_theme->get( 'Version' ) );
+		wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:200,700|Six+Caps|Italiana|Barlow', array(), $the_theme->get( 'Version' ) );
 	}
 } // endif function_exists( 'understrap_scripts' ).
 

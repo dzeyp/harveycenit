@@ -9138,6 +9138,10 @@ body {
   background-color: #171717;
   color: #ffffff; }
 
+p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px; }
+
 input, button {
   outline: none !important; }
 
@@ -9559,9 +9563,10 @@ figure {
     margin: 10px 20px 0px; }
 
 .container-section {
-  margin-top: 40px; }
+  margin-top: 100px; }
   .container-section .section-title {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 20px; }
     .container-section .section-title h2 {
       padding: 0 20px;
       position: relative;
@@ -9576,11 +9581,35 @@ figure {
       top: 11px;
       z-index: 1; }
 
+.press .col-left {
+  padding-right: 20px !important; }
+
+.press .col-right {
+  padding-left: 20px !important; }
+
+.press .about-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
 @media (max-width: 991px) {
   .shuffle .column {
     width: 50%; }
   .shuffle .col-span {
     width: 100%; } }
+
+#wrapper-footer {
+  border-top: 1px solid #282828;
+  background: #202020;
+  margin-top: 60px;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 20px; }
+  #wrapper-footer .social-media a {
+    margin: 0 10px;
+    color: #aaa; }
+  #wrapper-footer .social-media a:hover {
+    color: #ddd; }
 
 /*
 * Use existing Bootstrap 4 classes and
