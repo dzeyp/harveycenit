@@ -9473,13 +9473,11 @@ figure {
     .dotted-bg {
         background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAFklEQVQYV2NkYGBoQMaMDGgAJIBfBQCk7gQFedei/QAAAABJRU5ErkJggg==') repeat transparent;
     }
-}
-
-@media (min-width: 992px) {
-    .dotted-bg {
-        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGBogGIGEGAEk0gAWQCsEkMFAFLuAgUPsJBaAAAAAElFTkSuQmCC') repeat transparent;
-    }
 } */
+@media (min-width: 992px) {
+  .dotted-bg {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGBogGIGEGAEk0gAWQCsEkMFAFLuAgUPsJBaAAAAAElFTkSuQmCC") repeat transparent; } }
+
 .slideshow-image {
   position: absolute;
   width: 100%;
@@ -9491,7 +9489,7 @@ figure {
   animation-iteration-count: infinite;
   animation-duration: 12s;
   opacity: 1;
-  transform: scale(1.03); }
+  transform: scale(1.05); }
   .slideshow-image:nth-child(1) {
     animation-name: kenburns-1;
     z-index: 2; }
@@ -9505,7 +9503,7 @@ figure {
 @keyframes kenburns-1 {
   0% {
     opacity: 1;
-    transform: scale(1.03); }
+    transform: scale(1.05); }
   2.08333% {
     opacity: 1; }
   31.25% {
@@ -9515,17 +9513,17 @@ figure {
     transform: scale(1); }
   100% {
     opacity: 0;
-    transform: scale(1.03); }
+    transform: scale(1.05); }
   97.91667% {
     opacity: 0;
-    transform: scale(1.03176); }
+    transform: scale(1.05294); }
   100% {
     opacity: 1; } }
 
 @keyframes kenburns-2 {
   31.25% {
     opacity: 1;
-    transform: scale(1.03); }
+    transform: scale(1.05); }
   35.41667% {
     opacity: 1; }
   64.58333% {
@@ -9535,12 +9533,12 @@ figure {
     transform: scale(1); }
   100% {
     opacity: 0;
-    transform: scale(1.03); } }
+    transform: scale(1.05); } }
 
 @keyframes kenburns-3 {
   64.58333% {
     opacity: 1;
-    transform: scale(1.03); }
+    transform: scale(1.05); }
   68.75% {
     opacity: 1; }
   97.91667% {
@@ -9548,6 +9546,41 @@ figure {
   100% {
     opacity: 0;
     transform: scale(1); } }
+
+.shuffle-link {
+  text-align: center; }
+  .shuffle-link button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 10px 20px 0px; }
+
+.container-section {
+  margin-top: 40px; }
+  .container-section .section-title {
+    text-align: center; }
+    .container-section .section-title h2 {
+      padding: 0 20px;
+      position: relative;
+      z-index: 2;
+      background: #171717;
+      display: inline;
+      font-size: 19px; }
+    .container-section .section-title hr {
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      position: relative;
+      margin: 0;
+      top: 11px;
+      z-index: 1; }
+
+@media (max-width: 991px) {
+  .shuffle .column {
+    width: 50%; }
+  .shuffle .col-span {
+    width: 100%; } }
 
 /*
 * Use existing Bootstrap 4 classes and

@@ -12,7 +12,7 @@ jQuery(window).on('load', function() { // makes sure the whole site is loaded
     });*/
 
 
-    /*var Shuffle = window.Shuffle;
+    var Shuffle = window.Shuffle;
 
     var myShuffle = new Shuffle(document.querySelector('.my-shuffle'), {
       itemSelector: '.js-item',
@@ -20,13 +20,15 @@ jQuery(window).on('load', function() { // makes sure the whole site is loaded
       buffer: 1,
     });
 
+    myShuffle.filter('nature');
+    
     jQuery('.nature').click(function() {
         myShuffle.filter('nature');
     });
 
     jQuery('.city').click(function() {
         myShuffle.filter('city');
-    });*/
+    });
 
 
 
