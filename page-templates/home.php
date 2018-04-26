@@ -16,21 +16,60 @@ get_header();
             <div class="slideshow-image" style="background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/2018/02/aniqah-702f-min.jpg')"></div>
             <div class="slideshow-image" style="background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/2018/02/aniqah-739-2f-min.jpg')"></div>
         </div>
+        <div class="dotted-bg"></div>
     </div>
 	<div class="container">
-        <div class="container-section reveal1 showcase1">
+        <div class="container-section reveal1 showcase showcase1">
             <div class="section-title">
                 <hr />
                 <h2>SHOWCASE</h2>
             </div>
-            <div class="shuffle-link">
-                <button class="nature">Link1</button>
-                <button class="city">Link2</button>
+            <div class="row showcase-parent">
+                <div class="col-12 shuffle-link">
+                    <button id="white" class="showcase-button">White</button>
+                    <button id="colored" class="showcase-button">Colored</button>
+                </div>
+                <div class="col-12">
+                    <div id="showcase-white" class="row showcase-child shown">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pa-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/test/white/1.jpg">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pa-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/test/white/2.jpg">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pa-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/test/white/3.jpg">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pa-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/test/white/4.jpg">
+                        </div>
+                    </div>
+                    <div id="showcase-colored" class="row showcase-child">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pa-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/test/colored/1.jpg">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pa-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/test/colored/2.jpg">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pa-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/test/colored/3.jpg">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pa-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/test/colored/4.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="shuffle-link">
+                <button class="nature">Wedding</button>
+                <button class="city">Fashion</button>
+                <button class="nature">Others</button>
             </div>
             <div class="js-grid my-shuffle">
                 <figure class="js-item column" data-groups='["nature"]'>
                     <div class="aspect aspect--16x9">
-                        <div class="aspect__inner"><img src="https://images.unsplash.com/uploads/141310026617203b5980d/c86b8baa?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=882e851a008e83b7a80d05bdc96aa817" obj.alt="obj.alt"/></div>
+                        <div class="aspect__inner"><img src="<?php echo get_template_directory_uri(); ?>/img/test/white/1.jpg" obj.alt="obj.alt"/></div>
                     </div>
                 </figure>
                 <figure class="js-item column row-span" data-groups='["nature"]'>
@@ -94,7 +133,7 @@ get_header();
                     </div>
                 </figure>
                 <div class="column my-sizer-element"></div>
-            </div>
+            </div> -->
         </div>
 
         <div class="container-section reveal1 press">
@@ -110,13 +149,13 @@ get_header();
                 <h2>ABOUT HARVEY</h2>
             </div>
             <div class="row">
-            	<div class="col-md-6 col-left">
+            	<div class="col-12 col-md-6 pa-2 text-center text-md-left">
             		<div class="about-text">
-	            		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-	            		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	            		<p><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	            		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span>"</span></p>
             		</div>
             	</div>
-            	<div class="col-md-6 col-right">
+            	<div class="col-12 col-md-6 pa-2 text-center text-md-right">
             		<img src="http://www.illustradolife.com/wp-content/uploads/2017/01/HARVEY-CENIT-Illustrado-Most-Influential-Filipinos-in-the-Gulf-Photo-by-Alex-Callueng-Asst-Photog-Bethoven-Filomeno.jpg" />
             	</div>
         	</div>

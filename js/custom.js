@@ -68,4 +68,11 @@ jQuery(document).ready(function() {
             }
         }
     });
+
+    jQuery('.showcase-button').click(function() {
+        var id = jQuery(this).attr('id');
+
+        jQuery('.showcase-child').removeClass('shown');
+        jQuery('#showcase-' + id).addClass('shown');
+    });
 });

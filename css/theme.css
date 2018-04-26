@@ -9148,7 +9148,7 @@ input, button {
 header {
   width: 100%;
   position: fixed;
-  z-index: 9;
+  z-index: 99;
   background-color: transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-transition: background-color 0.5s, border-bottom 0.5s;
@@ -9160,6 +9160,9 @@ header {
   min-width: 180px;
   margin-left: 20px;
   margin-bottom: 5px; }
+  @media (max-width: 991px) {
+    .logo-wrapper {
+      margin-left: 0; } }
 
 .navbar-brand {
   font-family: 'Six Caps', sans-serif;
@@ -9235,9 +9238,28 @@ header {
   .slider-wrapper .slide-right {
     right: 0%; }
 
-@media (max-width: 575px) {
-  .navbar-brand {
-    padding-left: 20px; } }
+.showcase .showcase-parent .showcase-child {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity 800ms;
+  overflow: hidden; }
+  .showcase .showcase-parent .showcase-child img {
+    width: 100%;
+    z-index: 8;
+    transform: scale(1);
+    transition: transform 800ms; }
+  .showcase .showcase-parent .showcase-child img:hover {
+    cursor: pointer;
+    transform: scale(0.98);
+    z-index: 9;
+    transition: transform 800ms; }
+
+.showcase .showcase-parent .shown {
+  z-index: 9;
+  position: relative;
+  opacity: 1;
+  transition: opacity 800ms; }
 
 .container, .container-fluid {
   margin: 0;
@@ -9248,6 +9270,14 @@ header {
     .container .row .col, .container .row .col-1, .container .row .col-10, .container .row .col-11, .container .row .col-12, .container .row .col-2, .container .row .col-3, .container .row .col-4, .container .row .col-5, .container .row .col-6, .container .row .col-7, .container .row .col-8, .container .row .col-9, .container .row .col-auto, .container .row .col-lg, .container .row .col-lg-1, .container .row .col-lg-10, .container .row .col-lg-11, .container .row .col-lg-12, .container .row .col-lg-2, .container .row .col-lg-3, .container .row .col-lg-4, .container .row .col-lg-5, .container .row .col-lg-6, .container .row .col-lg-7, .container .row .col-lg-8, .container .row .col-lg-9, .container .row .col-lg-auto, .container .row .col-md, .container .row .col-md-1, .container .row .col-md-10, .container .row .col-md-11, .container .row .col-md-12, .container .row .col-md-2, .container .row .col-md-3, .container .row .col-md-4, .container .row .col-md-5, .container .row .col-md-6, .container .row .col-md-7, .container .row .col-md-8, .container .row .col-md-9, .container .row .col-md-auto, .container .row .col-sm, .container .row .col-sm-1, .container .row .col-sm-10, .container .row .col-sm-11, .container .row .col-sm-12, .container .row .col-sm-2, .container .row .col-sm-3, .container .row .col-sm-4, .container .row .col-sm-5, .container .row .col-sm-6, .container .row .col-sm-7, .container .row .col-sm-8, .container .row .col-sm-9, .container .row .col-sm-auto, .container .row .col-xl, .container .row .col-xl-1, .container .row .col-xl-10, .container .row .col-xl-11, .container .row .col-xl-12, .container .row .col-xl-2, .container .row .col-xl-3, .container .row .col-xl-4, .container .row .col-xl-5, .container .row .col-xl-6, .container .row .col-xl-7, .container .row .col-xl-8, .container .row .col-xl-9, .container .row .col-xl-auto, .container-fluid .row .col, .container-fluid .row .col-1, .container-fluid .row .col-10, .container-fluid .row .col-11, .container-fluid .row .col-12, .container-fluid .row .col-2, .container-fluid .row .col-3, .container-fluid .row .col-4, .container-fluid .row .col-5, .container-fluid .row .col-6, .container-fluid .row .col-7, .container-fluid .row .col-8, .container-fluid .row .col-9, .container-fluid .row .col-auto, .container-fluid .row .col-lg, .container-fluid .row .col-lg-1, .container-fluid .row .col-lg-10, .container-fluid .row .col-lg-11, .container-fluid .row .col-lg-12, .container-fluid .row .col-lg-2, .container-fluid .row .col-lg-3, .container-fluid .row .col-lg-4, .container-fluid .row .col-lg-5, .container-fluid .row .col-lg-6, .container-fluid .row .col-lg-7, .container-fluid .row .col-lg-8, .container-fluid .row .col-lg-9, .container-fluid .row .col-lg-auto, .container-fluid .row .col-md, .container-fluid .row .col-md-1, .container-fluid .row .col-md-10, .container-fluid .row .col-md-11, .container-fluid .row .col-md-12, .container-fluid .row .col-md-2, .container-fluid .row .col-md-3, .container-fluid .row .col-md-4, .container-fluid .row .col-md-5, .container-fluid .row .col-md-6, .container-fluid .row .col-md-7, .container-fluid .row .col-md-8, .container-fluid .row .col-md-9, .container-fluid .row .col-md-auto, .container-fluid .row .col-sm, .container-fluid .row .col-sm-1, .container-fluid .row .col-sm-10, .container-fluid .row .col-sm-11, .container-fluid .row .col-sm-12, .container-fluid .row .col-sm-2, .container-fluid .row .col-sm-3, .container-fluid .row .col-sm-4, .container-fluid .row .col-sm-5, .container-fluid .row .col-sm-6, .container-fluid .row .col-sm-7, .container-fluid .row .col-sm-8, .container-fluid .row .col-sm-9, .container-fluid .row .col-sm-auto, .container-fluid .row .col-xl, .container-fluid .row .col-xl-1, .container-fluid .row .col-xl-10, .container-fluid .row .col-xl-11, .container-fluid .row .col-xl-12, .container-fluid .row .col-xl-2, .container-fluid .row .col-xl-3, .container-fluid .row .col-xl-4, .container-fluid .row .col-xl-5, .container-fluid .row .col-xl-6, .container-fluid .row .col-xl-7, .container-fluid .row .col-xl-8, .container-fluid .row .col-xl-9, .container-fluid .row .col-xl-auto {
       margin: 0;
       padding: 0; }
+    .container .row .pa-1, .container-fluid .row .pa-1 {
+      padding: 5px; }
+    .container .row .pa-2, .container-fluid .row .pa-2 {
+      padding: 10px; }
+    .container .row .ma-1, .container-fluid .row .ma-1 {
+      margin: 5px; }
+    .container .row .ma-2, .container-fluid .row .ma-2 {
+      margin: 10px; }
 
 .bg-transparent {
   background-color: transparent !important; }
@@ -9269,6 +9299,15 @@ body {
   /* change if the mask should have another color then white */
   z-index: 99;
   /* makes sure it stays on top */ }
+  #preloader i {
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    margin: -20px 0 0 -20px;
+    /* is width and height divided by two */ }
 
 #status {
   width: 200px;
@@ -9552,7 +9591,8 @@ figure {
     transform: scale(1); } }
 
 .shuffle-link {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px !important; }
   .shuffle-link button {
     border: none;
     background: transparent;
@@ -9560,7 +9600,7 @@ figure {
     font-family: Montserrat,sans-serif;
     font-size: 14px;
     cursor: pointer;
-    margin: 10px 20px 0px; }
+    padding: 10px 20px; }
 
 .container-section {
   margin-top: 100px; }

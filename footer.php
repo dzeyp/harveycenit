@@ -41,9 +41,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div> --><!-- .site-info -->
 					<span class="pull-left">&copy; 2018 Harvey Cenit</span>
 					<span class="social-media pull-right">
-						<a href="" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-						<a href="" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-						<a href="" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+						<a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+						<a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="" target="_blank"><i class="fab fa-twitter"></i></a>
 					</span>
 					<span class="pull-right">
 						Follow me on&nbsp;&nbsp;&nbsp;&nbsp;
